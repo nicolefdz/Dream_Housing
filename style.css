@@ -94,6 +94,7 @@ header {
 .menu-button {
     display: none; 
     cursor: pointer;
+    font-size: 24px;
 }
 
 @media only screen and (max-width: 850px) {
@@ -133,13 +134,12 @@ header {
         cursor: pointer;
         font-size: 24px;
     }
-    #menu-toggle:checked + .nav_links {
+    #menu-toggle:checked + .menu-button {
+        display: block;
+    }
+    #menu-toggle:checked + .menu-button + .nav_links {
         display: flex;
         flex-direction: column;
         align-items: center;
-    }
-
-    #menu-toggle:checked + .nav_links + .menu-button {
-        display: block;
     }
 }
