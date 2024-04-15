@@ -88,6 +88,9 @@ header {
     width: 110px;
     height: 110px;
 }
+#menu-toggle {
+    display: none;
+}
 .menu-button {
     display: none; 
     cursor: pointer;
@@ -97,6 +100,15 @@ header {
 
     .navbar {
         padding: 1px 5%;
+        background: white;
+        background-size: 100px 100px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;   
     }
     .nav_links li {
         padding: 0px 10px;
@@ -118,9 +130,16 @@ header {
 
     .menu-button {
         display: block; 
+        cursor: pointer;
+        font-size: 24px;
+    }
+    #menu-toggle:checked + .nav_links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
-    .menu-open .nav_links {
-        display: block; 
+    #menu-toggle:checked + .nav_links + .menu-button {
+        display: block;
     }
 }
