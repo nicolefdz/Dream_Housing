@@ -7,16 +7,27 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
+        <nav class="navbar">
+           <img class="logo" src="images/logo.svg" alt="logo">
+            <ul class= "nav_links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Services</a></li>
+                <li class="ctn"><a href="#"></a>Contact</li>
+            </ul>
+            <div class="menu-button">&#9776;</div>
+        </nav>
         <header>
-            <img class="logo" src="images/logo.svg" alt="logo">
-            <nav>
-                <ul class= "nav_links">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Services</a></li>
-                </ul>
-            </nav>
-            <a class="cta" href="#"><button>Contact</button></a>
+            <div class="header-content">
+                <h1>Where Dreams <br> Find Houses</h1>
+                <p> Trust Dream Housing for all your leasing or buying needs in <br>today's competitive housing market.No matter the level of<br> service required, we are ready to help you.</p>
+                <a href="#" class="ctn">Learn More</a>
+            </div>
         </header>
+        <script>
+            document.querySelector('.menu-button').addEventListener('click', function() {
+                document.querySelector('.navbar').classList.toggle('menu-open');
+            });
+        </script>
     </body>
 </html>
