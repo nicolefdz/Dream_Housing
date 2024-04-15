@@ -115,6 +115,11 @@ header {
         padding: 0px 10px;
         margin-top: 20px;
     }
+    #menu-toggle:checked + .menu-button + .nav_links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
     .header-content h1 {
         font-size: 5vmin;
     }
@@ -136,10 +141,5 @@ header {
     }
     #menu-toggle:checked + .menu-button {
         display: block;
-    }
-    #menu-toggle:checked + .menu-button + .nav_links {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
     }
 }
